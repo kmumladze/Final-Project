@@ -1,0 +1,99 @@
+.maindiv{
+    margin-top: 10%;
+    text-align: center;
+   
+    
+}
+
+img{
+    margin-top: 5%;
+}
+p{
+    font-family: "Crimson Text", serif;
+}
+.main-text{
+    width: 50%;
+    margin-left: 25%;
+    font-size: 20px;
+    margin-top: 5%;
+}
+.services{
+    margin-top: 5%;
+}
+.details{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    list-style-position:inside;
+}
+.wifi{
+    color: rgb(37, 208, 37);
+    font-weight: bolder;
+}
+.parent{
+    display: flex;
+    gap: 100px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.list{
+    margin-top: 25%;
+}
+h5{
+    text-align: left;
+    margin-left: 10%;
+}
+.box{
+    border: 1px solid black;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 25%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    gap: 25px;
+}
+.box h3{
+    margin-top: 5%;
+}
+.box-child{
+    text-align: start;
+    margin-left: 10%;
+    
+}
+h1{
+    font-family: "Dancing Script", cursive;
+    font-size: 45px;
+}
+h4{
+    font-family: "EB Garamond", serif;
+    font-style: italic;
+    font-weight: bolder;
+    color: rgba(26, 25, 25, 0.817);
+}
+
+@media screen and (max-width: 767px) {
+    .intro-text{
+        padding-top: 10% !important;
+    }
+    img{
+        width: 100%;
+    }
+   .parent{
+    display: flex;
+    flex-wrap: nowrap;
+   }
+   .test{
+    width: 100%;
+    padding-left: 10px;
+    display: none;
+   }
+   .box{
+    margin-bottom: 15%;
+   }
+}

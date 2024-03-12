@@ -3,17 +3,46 @@ import { BrowserModule, provideClientHydration } from '@angular/platform-browser
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { HotelListComponent } from './hotel-list/hotel-list.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { AboutComponent } from './about/about.component';
+import { FooterComponent } from './footer/footer.component';
+import { FullinfoComponent } from './fullinfo/fullinfo.component';
+import { RoomsComponent } from './rooms/rooms.component';
+import { ContactComponent } from './contact/contact.component';
+import { FilterComponent } from './filter/filter.component';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { NgbCarousel, NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { HotelsComponent } from './hotels/hotels.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HotelListComponent,
+    NavbarComponent,
+    AboutComponent,
+    FooterComponent,
+    FullinfoComponent,
+    RoomsComponent,
+    ContactComponent,
+    FilterComponent,
+    HotelsComponent,
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule,
+    NgbModule,
+    NgbCarousel
   ],
   providers: [
-    provideClientHydration()
+    provideClientHydration(),
+    provideAnimationsAsync()
   ],
   bootstrap: [AppComponent]
 })

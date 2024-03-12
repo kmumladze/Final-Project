@@ -1,0 +1,35 @@
+.footer{
+    /* border: 1px solid black; */
+    display: flex;
+    background-color: #88b3cdc8;
+    box-shadow:  0 4px 6px rgba(0, 0, 0, 0.1);
+    color: black;
+    height: 30vh;
+    position: relative;
+    bottom: 0 !important;
+    /* margin-top: 20%; */
+    justify-content: center;
+    width: 100%;
+   
+    /* backdrop-filter: blur(10px) !important;
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+    
+}
+
+.footer-child1{
+    margin-top: 25px; 
+}
+.footer-child1 .text{
+    width: 40%;
+    font-style: italic;
+}
+.footer-child2{
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
+.footer-child2 a{
+    text-decoration: none;
+    font-size: 20px;
+}
