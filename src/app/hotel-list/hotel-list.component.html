@@ -6,13 +6,10 @@
         class="form-select"
         aria-label="Default select example"
       >
-        <option selected>Select Hotel</option>
+        <option selected value="">Select Hotel</option>
         <option *ngFor="let hotel of hotels" value="{{ hotel.id }}">
           {{ hotel.name }}
         </option>
-        <!-- <option value="1">The Biltmore Hotel Tbilisi</option>
-            <option value="2">Courtyard by Marriott Tbilisi</option>
-            <option value="3">Radisson Blu Iveria Hotel Tbilisi</option> -->
       </select>
     </div>
 
@@ -30,7 +27,7 @@
   <div class="cards">
     <div
       routerLink="/fullinfo/{{ hotel.id }}"
-      *ngFor="let hotel of hotels"
+      *ngFor="let hotel of getSelectedHotel()"
       class="card"
       style="width: 18rem"
     >
