@@ -16,6 +16,8 @@ import { FilterComponent } from './filter/filter.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { NgbCarousel, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HotelsComponent } from './hotels/hotels.component';
+import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
+import { ErrorComponent } from './error/error.component';
 
 
 @NgModule({
@@ -26,10 +28,11 @@ import { HotelsComponent } from './hotels/hotels.component';
     AboutComponent,
     FooterComponent,
     FullinfoComponent,
-    RoomsComponent,
+    // RoomsComponent,
     ContactComponent,
     FilterComponent,
     HotelsComponent,
+    ErrorComponent,
     
   ],
   imports: [
@@ -38,7 +41,8 @@ import { HotelsComponent } from './hotels/hotels.component';
     FormsModule,
     HttpClientModule,
     NgbModule,
-    NgbCarousel
+    NgbCarousel,
+    NgbCarouselModule
   ],
   providers: [
     provideClientHydration(),

@@ -79,21 +79,29 @@ h4{
 
 @media screen and (max-width: 767px) {
     .intro-text{
-        padding-top: 10% !important;
+        margin-top: 40% !important;
     }
     img{
-        width: 100%;
+        width: 90%;
     }
-   .parent{
-    display: flex;
-    flex-wrap: nowrap;
-   }
-   .test{
-    width: 100%;
-    padding-left: 10px;
-    display: none;
-   }
-   .box{
-    margin-bottom: 15%;
-   }
+    .details{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .parent{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+    .box{
+        display: flex;
+        width: 70%;
+        margin-left: 100px !important;
+    }
+    .child3{
+        margin-left: 15%;
+    }
+    .child1{
+        margin-left: 5%;
+    }
 }

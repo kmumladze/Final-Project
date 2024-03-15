@@ -1,15 +1,17 @@
 <section>
-  <div routerLink="/rooms/{{rooms.id}}" *ngFor="let rooms of hotelList">
-    <div class="card" style="width: 18rem;">
-        <img [src]="rooms.images[0].source" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">{{rooms.name}}</h5>
-          <p class="card-text">maximumGuests: {{rooms.maximumGuests}}</p>
-          <p class="card-title">price: {{rooms.pricePerNight}}</p>
-          <a href="#" routerLink="/rooms" class="btn btn-primary">See more</a>
-        </div>
+  <div routerLink="/rooms/{{ rooms.id }}" *ngFor="let rooms of hotelList">
+    <div class="card" style="width: 18.8rem">
+      <img [src]="rooms.images[0].source" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">{{ rooms.name }}</h5>
+        <p class="card-text">Maximum Guests: {{ rooms.maximumGuests }}</p>
+        <p class="card-title">
+          <i class="fa-solid fa-lari-sign"></i> {{ rooms.pricePerNight }} night
+        </p>
+        <a href="#" routerLink="/rooms/{{ rooms.id }}" class="btn btn-primary"
+          >See more</a
+        >
       </div>
-</div>
-
+    </div>
+  </div>
 </section>
-

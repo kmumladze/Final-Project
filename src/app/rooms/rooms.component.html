@@ -1,33 +1,17 @@
 <section>
-    <div *ngFor="let rooms of roomsList">
-        <div class="card" style="width: 18rem;">
-            <img [src]="rooms.source" class="card-img-top" alt="...">
-            
-        </div>
+  <div *ngFor="let rooms of roomsList">
+    <div class="card" style="width: 18rem">
+      <img [src]="rooms.source" class="card-img-top" alt="..." />
     </div>
+  </div>
 </section>
 
-
-
-
-
-     <!-- <ngb-carousel
-[interval]="5000"
-[pauseOnHover]="false"
->
-    <ng-template ngbSlide *ngFor="let rooms of roomsList">
-               <div class="carousel-wrapper">
-                <img [src]="rooms.source" class="card-img-top" alt="...">
-                    <div class="caption">
-                     <p class="firstP">{{image.firstP}}</p>
-                     <h1> {{image.caption}}</h1>
-                     <p class="secondP">{{image.secondP}}</p>
-                    </div>  -->
-               <!-- </div>
-    </ng-template>
- 
- 
-  </ngb-carousel>   -->
-
-
-
+<!-- 
+<ngb-carousel [interval]="5000" [pauseOnHover]="false">
+  <ng-template ngbSlide *ngFor="let rooms of roomsList">
+    <div class="carousel-wrapper">
+      <img *ngFor="let image of room.images" [src]="image.source" class="card-img-top" alt="..." />
+      
+    </div>
+  </ng-template>
+</ngb-carousel> -->

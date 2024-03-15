@@ -1,35 +1,87 @@
-.footer{
-    /* border: 1px solid black; */
-    display: flex;
-    background-color: #88b3cdc8;
-    box-shadow:  0 4px 6px rgba(0, 0, 0, 0.1);
-    color: black;
-    height: 30vh;
-    position: relative;
-    bottom: 0 !important;
-    /* margin-top: 20%; */
-    justify-content: center;
-    width: 100%;
-   
-    /* backdrop-filter: blur(10px) !important;
+.footer {
+  /* border: 1px solid black; */
+  display: flex;
+  background-color: #88b3cdc8;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: black;
+  height: 40vh;
+  position: relative;
+  bottom: 0 !important;
+  /* margin-top: 20%; */
+  justify-content: center;
+  width: 100%;
+
+  /* backdrop-filter: blur(10px) !important;
     background-color: rgba(255, 255, 255, 0.3);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
-    
 }
 
-.footer-child1{
-    margin-top: 25px; 
+.footer-child1 {
+  margin-top: 25px;
 }
-.footer-child1 .text{
-    width: 40%;
-    font-style: italic;
+.footer-child1 .text {
+  width: 40%;
+  font-style: italic;
 }
-.footer-child2{
-    display: flex;
-    flex-direction: column;
-    margin-top: 25px;
+.footer-child2 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+  gap: 20px;
 }
-.footer-child2 a{
-    text-decoration: none;
-    font-size: 20px;
+.footer-child2 a {
+  text-decoration: none;
+  font-size: 20px;
+}
+h1{
+  font-family: "Dancing Script", cursive;
+}
+p{
+  font-style: italic;
+  font-family: "EB Garamond", serif;
+  font-size: 15px;
+}
+.icons {
+  display: flex;
+  gap: 20px;
+  font-size: 30px;
+  
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.vertical {
+  border-left: 6px solid black;
+  height: 250px;
+  position: absolute;
+  left: 50%;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .footer{
+      display: flex;
+      flex-direction: column;
+      height: 70vh;
+      text-align: center;
+      margin-top: 800px;
+     
+    }
+    hr{
+      display: none;
+    }
+    .text{
+      width: 300px !important;
+      text-align: center;
+      margin-left: 20%;
+    }
+    .icons{
+      margin-left: 40%;
+    }
+    .logo h1{
+      font-size: 50px !important;
+    }
+  
 }

@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { HttpService } from '../shared/http.service';
 import { ActivatedRoute } from '@angular/router';
+import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
+
 
 export interface Rooms{
   id: number;
@@ -29,7 +31,9 @@ export interface Type2{
 @Component({
   selector: 'app-rooms',
   templateUrl: './rooms.component.html',
-  styleUrl: './rooms.component.css'
+  imports: [NgbCarouselModule],
+  standalone: true,
+  styleUrls: ['./rooms.component.css']
 })
 export class RoomsComponent {
 

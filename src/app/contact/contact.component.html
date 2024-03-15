@@ -1,37 +1,133 @@
 <section>
-    
-    <form>
-        <h3>Contact details</h3>
-        <div class="mb-3">
-            <input type="text" class="form-control" id="exampleInputName"
-            placeholder="First name and Surname*">
-        </div>
-       
-        <div class="mb-3">
-        <!-- <label for="exampleInputPassword1" class="form-label">Password</label> -->
-        <input type="number" class="form-control" id="exampleInputPassword1"
-        placeholder="Phone*">
-        </div>
-        <div class="mb-3">
-            <!-- <label for="exampleInputEmail1" class="form-label">Email address</label> -->
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-             placeholder="Email*">
-            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-        </div>
-       
-        <!-- <div class="mb-3 form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-        <label class="form-check-label" for="exampleCheck1">Check me out</label> -->
-        <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
-
-
-    <div class="messageBox">
-        <h3>Saying details</h3>
-        <input type="text" class="form-control" placeholder="Message">
-        <button>Send Message</button>
+  <form>
+    <h3>Contact details</h3>
+    <div class="mb-3">
+      <input
+        [ngClass]="{
+          warning: fullName.touched && !fullName.dirty,
+          success: fullName.touched && fullName.dirty
+        }"
+        #fullName="ngModel"
+        type="text"
+        class="form-control"
+        id="exampleInputName"
+        placeholder="First name and Surname*"
+        name="fullName"
+        ngModel
+      />
+      <div
+        class="validation"
+        *ngIf="(fullName.touched || submitted) && !fullName.dirty"
+      >
+        Please enter this field.
+      </div>
+      <div class="validation2" *ngIf="fullName.dirty">
+        Done <i class="fa-solid fa-check"></i>.
+      </div>
     </div>
 
+    <div class="mb-3">
+      <input
+        [ngClass]="{
+          warning: number.touched && !number.dirty,
+          success: number.touched && number.dirty
+        }"
+        #number="ngModel"
+        type="number"
+        class="form-control"
+        id="exampleInputPassword1"
+        placeholder="Phone*"
+        name="number"
+        ngModel
+      />
+      <div
+        class="validation"
+        *ngIf="(number.touched || submitted) && !number.dirty"
+      >
+        Please enter this field.
+      </div>
+      <div class="validation2" *ngIf="number.dirty">
+        Done <i class="fa-solid fa-check"></i>.
+      </div>
+    </div>
 
+    <div class="mb-3">
+      <input
+        [ngClass]="{
+          warning: email.touched && !email.dirty,
+          success: email.touched && email.dirty
+        }"
+        #email="ngModel"
+        type="email"
+        class="form-control"
+        id="exampleInputEmail1"
+        aria-describedby="emailHelp"
+        placeholder="Email*"
+        name="email"
+        ngModel
+      />
+      <div
+        class="validation"
+        *ngIf="(email.touched || submitted) && !email.dirty"
+      >
+        Please enter this field.
+      </div>
+      <div class="validation2" *ngIf="email.dirty">
+        Done <i class="fa-solid fa-check"></i>.
+      </div>
 
+      <div id="emailHelp" class="form-text">
+        We'll never share your email with anyone else.
+      </div>
+    </div>
+
+    <div class="form-check">
+      <input
+        class="form-check-input"
+        type="checkbox"
+        value=""
+        id="invalidCheck"
+        required
+        [(ngModel)]="termsChecked"
+        name="invalidCheck"
+      />
+      <div class="validation" *ngIf="submitted && !termsChecked">
+        Please agree to the terms and conditions.
+      </div>
+
+      <label class="form-check-label" for="invalidCheck">
+        Agree to terms and conditions
+      </label>
+    </div>
+
+    <button type="submit" class="btn btn-primary" (click)="submitted = true">
+      Submit
+    </button>
+  </form>
+
+  <div class="messageBox">
+    <h3>Saying details</h3>
+    <input
+      [ngClass]="{
+        success: message.touched && message.dirty
+      }"
+      #message="ngModel"
+      type="email"
+      class="form-control"
+      id="exampleInputEmail1"
+      aria-describedby="emailHelp"
+      placeholder="Email*"
+      name="message"
+      ngModel
+      type="text"
+      class="form-control"
+      placeholder="Message"
+    />
+    <div class="validation2" *ngIf="message.dirty">
+        Done <i class="fa-solid fa-check"></i>.
+      </div>
+    <button>Send Message</button>
+  </div>
 </section>
+
+<div #gmapContainer id="map"></div>

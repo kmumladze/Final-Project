@@ -1,42 +1,88 @@
-section{
-    margin-top: 10%;
-    display: flex;
-    gap: 300px;
-    justify-content: center;
-    margin-bottom: 300px;
-   
+section {
+  margin-top: 10%;
+  display: flex;
+  gap: 300px;
+  justify-content: center;
+  margin-bottom: 300px;
 }
-form{
-    width: 30% !important;
-    margin-left: 5%;
+form {
+  width: 30% !important;
+  margin-left: 5%;
 }
-form input{
-    font-style: italic;
+form input {
+  font-style: italic;
 }
-.btn{
-    background-color: #A2C3D8;
-    border: none;
-    color: black;
-    font-style: italic;
+.btn {
+  background-color: #a2c3d8;
+  border: none;
+  color: black;
+  font-style: italic;
+  transition: 0.7s;
 }
-h3{
-    margin-left: 5%;
-    font-style: italic;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+.btn:hover {
+  background-color: rgb(26, 26, 147);
+  color: white;
+  transition: 0.7s;
 }
-.messageBox input{
-    width: 300px;
-    height: 20vh;
-    padding-bottom: 100px;
+.form-check {
+  margin-bottom: 5%;
 }
-.messageBox button{
-    margin-top: 20px;
-    border: none;
-    background-color: #A2C3D8;
-    width: 300px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-style: italic;
+
+h3 {
+  margin-left: 5%;
+  font-style: italic;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.messageBox input {
+  width: 300px;
+  height: 20vh;
+  padding-bottom: 100px;
+}
+.messageBox button {
+  margin-top: 20px;
+  border: none;
+  background-color: #a2c3d8;
+  width: 300px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-style: italic;
+  transition: 0.7s;
+}
+.messageBox button:hover {
+  background-color: rgb(26, 26, 147);
+  color: white;
+  transition: 0.7s;
+}
+
+.warning {
+  border: 2px solid red;
+}
+.success {
+  border: 2px solid green;
+}
+.validation {
+  color: red;
+}
+.validation2{
+    color: green;
+}
+.fa-solid{
+    color: green;
 }
 
 
+#map { height: 550px; width: 100%; }
+
+
+@media screen and (max-width: 767px) {
+    section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30% !important;
+        gap: 80px !important;
+    }
+    form{
+        width: 80% !important;
+    }
+}

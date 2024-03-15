@@ -24,6 +24,8 @@
     </div>
   </div>
 
+
+
   <div class="cards">
     <div
       routerLink="/fullinfo/{{ hotel.id }}"
@@ -36,7 +38,10 @@
         <h5 class="card-title">{{ hotel.name }}</h5>
         <p class="card-text">{{ hotel.address }}</p>
         <p class="card-text">{{ hotel.city }}</p>
-        <a href="#" routerLink="/fullinfo" class="btn btn-primary"
+        <a
+          href="#"
+          routerLink="/fullinfo/{{ hotel.id }}"
+          class="btn btn-primary"
           >View details</a
         >
       </div>

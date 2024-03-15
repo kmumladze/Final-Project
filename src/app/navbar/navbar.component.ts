@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
+  
+  public isCardShow:Boolean = false;
 
+  showCard(){
+      this.isCardShow = true;
+  }
 }
