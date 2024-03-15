@@ -9,12 +9,16 @@ section{
     margin-top: 10%;
     margin-bottom: 10%;
     height: 100vh;
+    text-align: center;
+    opacity: 0.9;
 }
+
 .btn{
-    background-color:  #a2c3d8;
+    background-color:  #09273a;
     border: none;
     font-weight: bolder;
     transition: 0.7s;
+    
 }
 .btn:hover{
     background-color: rgb(26, 26, 147);

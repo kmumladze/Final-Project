@@ -27,6 +27,10 @@ a {
   color: black;
   margin-left: 25%;
   opacity: 0.5;
+  font-style: italic !important;
+  font-weight: 600;
+  transition: 0.7s;
+  
 }
 
 .section2 {

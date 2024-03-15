@@ -1,5 +1,5 @@
 <div *ngIf="roomsList.length > 0">
-  <mdb-carousel [indicators]="true" [animation]="'fade'">
+  <mdb-carousel [controls]="true" [indicators]="true" [animation]="'fade'">
     <mdb-carousel-item *ngFor="let rooms of roomsList">
       <div class="card">
         <img [src]="rooms.source" class="card-img-top" alt="..." />
