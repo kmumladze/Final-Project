@@ -3,6 +3,7 @@ import {
   BrowserModule,
   provideClientHydration,
 } from '@angular/platform-browser';
+import { MdbCarouselModule } from 'mdb-angular-ui-kit/carousel';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -44,6 +45,7 @@ import { ErrorComponent } from './error/error.component';
     NgbModule,
     NgbCarousel,
     NgbCarouselModule,
+    MdbCarouselModule,
   ],
   providers: [provideClientHydration(), provideAnimationsAsync()],
   bootstrap: [AppComponent],
