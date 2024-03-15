@@ -1,6 +1,8 @@
 <section>
   <div>
-    <a routerLink="/" href=""><h1>Loftet <i class="fa-solid fa-map-location"></i></h1></a>
+    <a routerLink="/" href=""
+      ><h1>Loftet <i class="fa-solid fa-map-location"></i></h1
+    ></a>
 
     <p>-nice places to stay-</p>
   </div>
@@ -16,10 +18,8 @@
       <a routerLink="/contact" routerLinkActive="active" href="#">Contact</a>
     </li>
   </ul>
-  <i (click)="showCard()" class="fa-solid fa-bars"></i>
+  <i (click)="toggleCard()" class="fa-solid fa-bars"></i>
 </section>
-
-
 
 <ul *ngIf="isCardShow" class="nav flex-column">
   <li class="nav-item">

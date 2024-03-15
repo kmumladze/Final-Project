@@ -3,11 +3,11 @@ section {
   top: 0;
   position: fixed;
   z-index: 999;
-  padding-top: 20px;
   width: 100%;
   backdrop-filter: blur(10px) !important;
   background-color: rgba(255, 255, 255, 0.3);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  align-items: center;
 }
 a {
   color: black !important;
@@ -98,23 +98,22 @@ ul li a:hover:before {
 .fa-bars {
   display: none;
 }
-.flex-column{
+.flex-column {
   display: none;
 }
 
 @media only screen and (max-width: 768px) {
-  ul{
+  ul {
     display: none;
   }
-  .fa-bars{
+  .fa-bars {
     display: inline;
     margin-left: 50% !important;
     margin-top: 5%;
     font-size: 30px;
   }
-  .flex-column{
-    display: inline;
-   
+  .flex-column {
+    display: block;
+    margin-top: 100px;
   }
-
 }

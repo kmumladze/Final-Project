@@ -3,13 +3,12 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
-  styleUrl: './navbar.component.css'
+  styleUrl: './navbar.component.css',
 })
 export class NavbarComponent {
-  
-  public isCardShow:Boolean = false;
+  public isCardShow: Boolean = false;
 
-  showCard(){
-      this.isCardShow = true;
+  toggleCard() {
+    this.isCardShow = !this.isCardShow;
   }
 }
