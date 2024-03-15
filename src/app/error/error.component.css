@@ -1,8 +1,8 @@
 h1 {
   text-align: center;
-  margin-top: 10%;
+  padding-top: 10%;
+  padding-bottom: 10%;
 }
-img{
-    margin-top: 5%;
-   
+img {
+  margin-top: 5%;
 }
