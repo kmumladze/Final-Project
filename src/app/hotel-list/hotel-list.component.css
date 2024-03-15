@@ -3,11 +3,6 @@ section {
   flex-direction: column;
   align-items: center;
   /* height: 150vh !important; */
-  background-image: url(https://images.trvl-media.com/lodging/1000000/920000/916400/916376/3e65a896.jpg?impolicy=resizecrop&rw=1200&ra=fit);
-  background-repeat: repeat-y;
-  width: 100% !important;
-  background-attachment: fixed;
-  background-size: cover;
 }
 
 .cards {
