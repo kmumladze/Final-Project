@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
+import {
+  BrowserModule,
+  provideClientHydration,
+} from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -19,7 +22,6 @@ import { HotelsComponent } from './hotels/hotels.component';
 import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 import { ErrorComponent } from './error/error.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,12 +30,11 @@ import { ErrorComponent } from './error/error.component';
     AboutComponent,
     FooterComponent,
     FullinfoComponent,
-    // RoomsComponent,
+    RoomsComponent,
     ContactComponent,
     FilterComponent,
     HotelsComponent,
     ErrorComponent,
-    
   ],
   imports: [
     BrowserModule,
@@ -42,12 +43,9 @@ import { ErrorComponent } from './error/error.component';
     HttpClientModule,
     NgbModule,
     NgbCarousel,
-    NgbCarouselModule
+    NgbCarouselModule,
   ],
-  providers: [
-    provideClientHydration(),
-    provideAnimationsAsync()
-  ],
-  bootstrap: [AppComponent]
+  providers: [provideClientHydration(), provideAnimationsAsync()],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
