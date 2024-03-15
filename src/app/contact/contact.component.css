@@ -1,9 +1,9 @@
 section {
   margin-top: 10%;
+  margin-bottom: 10%;
   display: flex;
   gap: 300px;
   justify-content: center;
-  margin-bottom: 300px;
 }
 form {
   width: 30% !important;
@@ -63,26 +63,27 @@ h3 {
 .validation {
   color: red;
 }
-.validation2{
-    color: green;
+.validation2 {
+  color: green;
 }
-.fa-solid{
-    color: green;
+.fa-solid {
+  color: green;
 }
 
-
-#map { height: 550px; width: 100%; }
-
+#map {
+  height: 550px;
+  width: 100%;
+}
 
 @media screen and (max-width: 767px) {
-    section{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 30% !important;
-        gap: 80px !important;
-    }
-    form{
-        width: 80% !important;
-    }
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30% !important;
+    gap: 80px !important;
+  }
+  form {
+    width: 80% !important;
+  }
 }
