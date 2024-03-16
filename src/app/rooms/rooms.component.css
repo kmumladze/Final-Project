@@ -1,4 +1,15 @@
 .card {
-  width: 100%;
-  
+  width: 768px;
+  margin: 0 auto;
+  border: none;
+}
+
+.carouse-wrapper {
+  padding: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .card {
+    width: 100%;
+  }
 }
